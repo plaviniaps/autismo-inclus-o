@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEA: Entendendo o Espectro Autista</title>
+    <!-- Carregando Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Definindo a fonte Inter como padrão */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f0f8ff 0%, #e6f2ff 100%);
+        }
+        .card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 5px solid #4a90e2;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+        }
+        .section-icon {
+            color: #4a90e2;
+            font-size: 2rem;
+            margin-right: 0.75rem;
+        }
+        /* Garantindo que o conteúdo se ajuste sem overflow horizontal */
+        main, header, footer {
+            overflow-x: hidden;
+        }
+        /* Efeito de gradiente no cabeçalho */
+        .header-gradient {
+            background: linear-gradient(135deg, #4a90e2 0%, #8a2be2 100%);
+        }
+        /* Efeito de brilho no botão */
+        .glow-button {
+            box-shadow: 0 0 15px rgba(79, 70, 229, 0.5);
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 20px rgba(79, 70, 229, 0.7);
+        }
+        /* Estilo para cards coloridos */
+        .color-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .color-card-2 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        .color-card-3 {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+    </style>
+</head>
+<body class="min-h-screen antialiased">
+
+    <!-- Cabeçalho Chamativo e Responsivo -->
+    <header class="header-gradient shadow-xl py-12 md:py-20 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold mb-4 leading-tight">
+                AUTISMO: UM ESPECTRO DE POSSIBILIDADES
+            </h1>
+            <p class="text-xl sm:text-2xl font-light opacity-90 max-w-3xl mx-auto px-2">
+                Entenda o Transtorno do Espectro Autista e a importância do suporte e da inclusão.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+
+        <!-- Seção: Mensagem sobre Inclusão -->
+        <div class="mb-12 mt-4"> 
+            <div class="w-full bg-gradient-to-r from-red-500 to-red-600 rounded-2xl shadow-lg p-8 text-white">
+                <div class="text-center max-w-4xl mx-auto">
+                    <div class="flex justify-center mb-4">
+                        <span class="text-4xl mr-4">⚠️</span>
+                        <span class="text-4xl">🚫</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-6">Essa vaga não existe.</h2>
+                    <p class="text-xl sm:text-2xl mb-6 leading-relaxed">
+                        Mas pessoas reais com autismo existem e são excluídas todos os dias por padrões irreais.
+                    </p>
+                    <p class="text-xl sm:text-2xl leading-relaxed">
+                        Autismo não impede talento, mas a falta de empatia impede oportunidades.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção: O que é o TEA (DSM-5) - Grid 1x3 (Celular -> Desktop) -->
+        <section class="mb-16">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-8 flex items-center">
+                <span class="section-icon">📚</span> Transtorno do Espectro Autista (TEA) – Segundo o DSM-5
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Os cards se empilham no celular (col-1) e se dividem em 3 no desktop (md:col-3) -->
+                <div class="card color-card">
+                    <p class="text-lg font-semibold mb-2">Neurodesenvolvimento</p>
+                    <p class="text-sm">O TEA é um transtorno do neurodesenvolvimento.</p>
+                </div>
+                <div class="card color-card-2">
+                    <p class="text-lg font-semibold mb-2">Acompanha a vida</p>
+                    <p class="text-sm">Inicia-se na primeira infância e acompanha a pessoa ao longo da vida.</p>
+                </div>
+                <div class="card color-card-3">
+                    <p class="text-lg font-semibold mb-2">Comunicação e Interação</p>
+                    <p class="text-sm">Afeta a comunicação, a interação social e os comportamentos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Principais Características - Grid 1x2 (Celular -> Tablet/Desktop) -->
+        <section class="mb-16">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-8 flex items-center">
+                <span class="section-icon">📌</span> Principais Características
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Cards se empilham no celular (col-1) e se dividem em 2 no desktop (md:col-2) -->
+                <div class="card" data-scenario="Dificuldade para interagir e se comunicar socialmente">
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-4 text-indigo-500">👥</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-indigo-600 mb-3">Interação Social</h3>
+                            <p class="text-gray-700">Dificuldade para interagir e se comunicar socialmente, incluindo o uso e a compreensão de sinais não verbais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-scenario="Comportamentos e interesses repetitivos e restritos">
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-4 text-indigo-500">🔄</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-indigo-600 mb-3">Interesses Restritos</h3>
+                            <p class="text-gray-700">Comportamentos e interesses repetitivos e restritos (estereotipias), como movimentos ou falas repetitivas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-scenario="Sensibilidade aumentada ou diminuída a sons, luzes, texturas ou cheiros">
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-4 text-indigo-500">👂</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-indigo-600 mb-3">Sensibilidade Sensorial</h3>
+                            <p class="text-gray-700">Sensibilidade aumentada ou diminuída a sons, luzes, texturas ou cheiros (hipo ou hipersensibilidade sensorial).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-scenario="Forte necessidade de rotinas, ordem e previsibilidade">
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-4 text-indigo-500">📅</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-indigo-600 mb-3">Rotina e Previsibilidade</h3>
+                            <p class="text-gray-700">Forte necessidade de rotinas, ordem e previsibilidade, podendo gerar sofrimento com mudanças inesperadas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Níveis de Suporte -->
+        <section class="mb-16 bg-white p-6 sm:p-8 rounded-2xl shadow-2xl">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-8 flex items-center">
+                <span class="section-icon">⚖️</span> Níveis de Suporte
+            </h2>
+            <p class="text-lg text-gray-700 mb-6">O TEA é classificado em níveis que indicam a intensidade do apoio necessário:</p>
+            <div class="space-y-4">
+                <div class="flex items-center p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border-l-4 border-emerald-500">
+                    <span class="text-3xl mr-4">🟢</span>
+                    <div>
+                        <p class="font-bold text-lg text-gray-800">Nível 1: Requer Suporte</p>
+                        <p class="text-sm text-gray-600">Dificuldades notáveis, mas consegue falar frases completas e interagir socialmente. A ajuda é necessária para iniciar interações e planejar.</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-gradient-to-r from-yellow-50 to-amber-50 rounded-lg border-l-4 border-orange-500">
+                    <span class="text-3xl mr-4">🟡</span>
+                    <div>
+                        <p class="font-bold text-lg text-gray-800">Nível 2: Suporte Substancial</p>
+                        <p class="text-sm text-gray-600">Dificuldades mais evidentes na comunicação verbal e não verbal, e interesses restritos ou comportamentos repetitivos frequentes que interferem no funcionamento.</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-gradient-to-r from-red-50 to-pink-50 rounded-lg border-l-4 border-red-500">
+                    <span class="text-3xl mr-4">🔴</span>
+                    <div>
+                        <p class="font-bold text-lg text-gray-800">Nível 3: Suporte Muito Substancial</p>
+                        <p class="text-sm text-gray-600">Dificuldades graves na comunicação e interação social, com pouca ou nenhuma fala funcional, e comportamentos repetitivos intensos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Observações Importantes - Grid 1x3 (Celular -> Desktop Grande) -->
+        <section class="mb-16">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-8 flex items-center">
+                <span class="section-icon">🧠</span> Observações Importantes
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Cards se empilham no celular (col-1) e se dividem em 3 em telas grandes (lg:col-3) -->
+                <div class="card border-l-4 border-purple-500">
+                    <div class="flex items-center mb-3">
+                        <div class="text-2xl mr-2 text-purple-500">🌟</div>
+                        <h3 class="text-xl font-bold text-purple-700">Cada Pessoa é Única</h3>
+                    </div>
+                    <p class="text-gray-700">O espectro é vasto. Cada pessoa no espectro é única e apresenta suas características, habilidades e desafios de formas diferentes.</p>
+                </div>
+                <div class="card border-l-4 border-teal-500">
+                    <div class="flex items-center mb-3">
+                        <div class="text-2xl mr-2 text-teal-500">🔍</div>
+                        <h3 class="text-xl font-bold text-teal-700">Diagnóstico Clínico</h3>
+                    </div>
+                    <p class="text-gray-700">O diagnóstico é clínico e multidisciplinar, envolvendo médicos, psicólogos e fonoaudiólogos. Não existe exame laboratorial.</p>
+                </div>
+                <div class="card border-l-4 border-indigo-500">
+                    <div class="flex items-center mb-3">
+                        <div class="text-2xl mr-2 text-indigo-500">🤝</div>
+                        <h3 class="text-xl font-bold text-indigo-700">Apoio Adequado</h3>
+                    </div>
+                    <p class="text-gray-700">Com apoio, intervenção precoce e suporte adequado, é totalmente possível desenvolver habilidades e alcançar maior autonomia.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção: Ferramenta de Suporte Gemini Responsiva -->
+        <section class="bg-indigo-50 p-6 rounded-2xl shadow-xl border border-indigo-200">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-indigo-800 mb-6 flex items-center">
+                <span class="section-icon text-indigo-800">✨</span> Gerador de Dicas de Suporte Gemini
+            </h2>
+            <p class="text-gray-700 mb-6">Selecione uma característica do TEA abaixo e use a IA para gerar uma dica prática e personalizada de como oferecer suporte.</p>
+
+            <div class="flex flex-col md:flex-row gap-4 items-end">
+                <div class="flex-grow w-full">
+                    <label for="scenarioSelect" class="block text-sm font-medium text-gray-700 mb-2">Selecione a Característica:</label>
+                    <select id="scenarioSelect" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 shadow-sm">
+                        <option value="">-- Selecione um tema --</option>
+                        <option value="Dificuldade para interagir e se comunicar socialmente">Dificuldade para Interagir/Comunicar</option>
+                        <option value="Comportamentos e interesses repetitivos e restritos">Comportamentos Repetitivos/Restritos</option>
+                        <option value="Sensibilidade aumentada ou diminuída a sons, luzes, texturas ou cheiros">Sensibilidade Sensorial</option>
+                        <option value="Forte necessidade de rotinas, ordem e previsibilidade">Necessidade de Rotinas</option>
+                    </select>
+                </div>
+                <button id="generateButton" onclick="generateSupportTip()" 
+                        class="w-full md:w-auto px-6 py-3 bg-indigo-600 text-white font-bold rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-[1.02] glow-button">
+                    ✨ Gerar Dica de Apoio
+                </button>
+            </div>
+
+            <div id="geminiResult" class="mt-6 min-h-[100px] bg-indigo-100 p-4 rounded-lg border-2 border-indigo-300">
+                <p class="text-gray-600">A dica gerada pela Inteligência Artificial aparecerá aqui após a seleção.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-indigo-600 mt-12 py-8 text-center text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-sm mb-4">&copy; 2025 | Conscientização sobre o Autismo. Promova a Inclusão.</p>
+            <div class="border-t border-indigo-400 pt-4">
+                <p class="text-sm mb-2">Precisa de apoio ou informações?</p>
+                <a href="https://www.instagram.com/institutosocial.santamaria?igsh=dnBjZnF4Y2s4ZDBy&utm_source=qr" 
+                   target="_blank" 
+                   class="inline-flex items-center text-white hover:text-indigo-200 transition-colors duration-300">
+                    <span class="mr-2">📱</span>
+                    Siga o Instituto Social Santa Maria no Instagram
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Inicialização e Lógica do Gemini API -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // Variáveis globais fornecidas pelo ambiente
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+        
+        // Configurações do Gemini API
+        const apiKey = ""; 
+        const geminiModel = 'gemini-2.5-flash-preview-09-2025';
+
+        let app;
+        let auth;
+        let db;
+        let userId = null;
+        let isAuthReady = false;
+
+        async function initializeFirebase() {
+            if (Object.keys(firebaseConfig).length === 0) {
+                console.error("Firebase configuration not available. Proceeding without full auth.");
+                isAuthReady = true;
+                return;
+            }
+            
+            // Inicializa Firebase
+            app = initializeApp(firebaseConfig);
+            auth = getAuth(app);
+            db = getFirestore(app);
+
+            // Listener de estado de autenticação
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    userId = user.uid;
+                    console.log("Firebase Auth Ready. User ID:", userId);
+                } else {
+                    console.log("No user signed in. Attempting sign-in...");
+                    try {
+                        if (initialAuthToken) {
+                            await signInWithCustomToken(auth, initialAuthToken);
+                        } else {
+                            await signInAnonymously(auth);
+                        }
+                    } catch (error) {
+                        console.error("Firebase sign-in failed:", error);
+                    }
+                }
+                isAuthReady = true;
+            });
+            
+            // Tenta o login imediato para garantir o token (se disponível)
+            if (!auth.currentUser && !isAuthReady) {
+                try {
+                    if (initialAuthToken) {
+                        await signInWithCustomToken(auth, initialAuthToken);
+                    } else {
+                        await signInAnonymously(auth);
+                    }
+                } catch (e) {
+                    // Ignore, the listener will catch the final state
+                }
+            }
+        }
+
+        // Função principal para chamar a API Gemini com backoff exponencial
+        async function makeGeminiApiCall(userQuery, systemPrompt, retries = 0) {
+            if (!isAuthReady) {
+                console.error("Authentication not ready. Cannot call Gemini API.");
+                return { text: "Erro: Autenticação não está pronta. Tente novamente após alguns segundos.", sources: [] };
+            }
+
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${geminiModel}:generateContent?key=${apiKey}`;
+            
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: { parts: [{ text: systemPrompt }] },
+            };
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    if ((response.status === 429 || response.status >= 500) && retries < 3) {
+                        const delay = Math.pow(2, retries) * 1000;
+                        await new Promise(resolve => setTimeout(resolve, delay));
+                        return makeGeminiApiCall(userQuery, systemPrompt, retries + 1);
+                    }
+                    throw new Error(`API call failed with status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                const candidate = result.candidates?.[0];
+
+                if (candidate && candidate.content?.parts?.[0]?.text) {
+                    const text = candidate.content.parts[0].text;
+                    return { text, sources: [] };
+                } else {
+                    return { text: "Desculpe, a IA não conseguiu gerar uma resposta válida. Tente um tema diferente.", sources: [] };
+                }
+
+            } catch (error) {
+                console.error("Error making Gemini API call:", error);
+                return { text: `Erro de conexão: ${error.message}`, sources: [] };
+            }
+        }
+
+        // Função para gerar e exibir a dica de suporte (disponível globalmente)
+        window.generateSupportTip = async function() {
+            const scenarioType = document.getElementById('scenarioSelect').value;
+            const resultDiv = document.getElementById('geminiResult');
+            const generateButton = document.getElementById('generateButton');
+            const initialText = generateButton.innerHTML;
+
+            if (!scenarioType) {
+                resultDiv.innerHTML = '<p class="text-orange-600 p-2">⚠️ Por favor, selecione um tipo de cenário no menu acima.</p>';
+                return;
+            }
+
+            // Exibir estado de carregamento
+            generateButton.disabled = true;
+            generateButton.innerHTML = '✨ Gerando Dica...';
+            resultDiv.innerHTML = '<div class="text-center p-4 text-indigo-600"><svg class="animate-spin h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>Aguarde, a IA está pensando...</div>';
+            
+            const systemPrompt = "Você é um especialista em estratégias de suporte e inclusão para pessoas no Espectro Autista. Seu papel é fornecer uma dica prática, concisa e empática (no máximo 3 frases) para lidar com uma característica específica do TEA em um contexto diário. Responda APENAS com a dica e uma breve explicação, sem introduções, saudações ou títulos.";
+            
+            const userQuery = `Gere uma dica de suporte para a seguinte característica do Autismo: "${scenarioType}". O foco deve ser em uma ação prática que um cuidador, familiar ou a própria pessoa no espectro pode realizar para gerenciar essa situação.`;
+
+            try {
+                const { text } = await makeGeminiApiCall(userQuery, systemPrompt);
+                
+                let outputHtml = `<div class="p-4 bg-white rounded-lg mt-4 border border-indigo-200">
+                                    <h4 class="text-xl font-bold text-indigo-700 mb-2">Dica de Suporte Gerada para: ${scenarioType}</h4>
+                                    <p class="text-gray-700 whitespace-pre-line">${text}</p>
+                                 </div>`;
+                
+                resultDiv.innerHTML = outputHtml;
+
+            } catch (error) {
+                resultDiv.innerHTML = `<p class="text-red-600 p-4">Ocorreu um erro ao processar a solicitação. Verifique o console para mais detalhes.</p>`;
+            } finally {
+                generateButton.disabled = false;
+                generateButton.innerHTML = initialText;
+            }
+        }
+
+        // Inicializa o Firebase ao carregar a janela
+        window.onload = initializeFirebase;
+    </script>
+</body>
+</html>
